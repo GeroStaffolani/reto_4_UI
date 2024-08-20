@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Zapatillas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.7/dist/css/uikit.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+
+
+        
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="/index.html">
+                    <img src="/img/logo.png" alt="Logo de la Tienda" style="height: 100px;">
+                </a>
+                <ul class="uk-navbar-nav">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li>
+                        <a href="#">Zapatillas</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="/zapa_hombre.html">Hombre</a></li>
+                                <li><a href="/zapa_mujer.html">Mujer</a></li>
+                                <li><a href="/zapa_niño.html">Niño</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/accesorios.html">Accesorios</a></li>
+                    <li><a href="/locales.html">Locales</a></li>
+                    <li><a href="/talles.html">Talles</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#" uk-toggle="target: #cart-dropdown">
+                            <span uk-icon="icon: cart"></span> <span id="cart-count" class="uk-badge">0</span>
+                        </a>
+                        <div id="cart-dropdown" uk-dropdown="pos: bottom-right">
+                            <h6 class="uk-dropdown-header">Carrito de Compras</h6>
+                            <div id="cart-items"></div>
+                            <hr class="uk-divider-small">
+                            <span id="total-price" class="uk-text-bold">Total: $0.00</span>
+                            <hr class="uk-divider-small">
+                            <a class="uk-button uk-button-default uk-width-1-1" href="/cart.html">Ver carrito</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-button uk-button-primary login-button" href="/login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</head>
+<body>
+
+<div class="uk-flex uk-flex-column uk-height-viewport">
+    <div class="uk-container uk-margin-top uk-flex-grow-1">
+        <div class="uk-section uk-section-muted uk-text-center">
+            <h1 class="uk-heading-medium">Bienvenido a la Tienda de Zapatillas</h1>
+            <p class="uk-lead">Encuentra las mejores zapatillas, accesorios y ropa deportiva.</p>
+        </div>
+
+        <!-- seccion productos -->
+        <div class="uk-grid uk-child-width-1-3@s uk-margin-medium-top" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-margin-bottom">
+                    <div class="uk-card-media-top">
+                        <img src="/img/zapa_h/Jordan/1.jpg" alt="Producto 1">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Jordan Mid</h3>
+                        <p>Jordan Mid - white&red.</p>
+                        <p>Precio: $120.00</p>
+                        <a href="/productos/zapa_h/prod1.html" class="uk-button uk-button-primary">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="uk-card uk-card-default uk-margin-bottom">
+                    <div class="uk-card-media-top">
+                        <img src="/img/zapa_h/dunk/1.jpg" alt="Producto 2">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Nike Dunk Low</h3>
+                        <p>Nike Dunk Low - black&white.</p>
+                        <p>Precio: $110.00</p>
+                        <a href="/productos/zapa_h/prod3.html" class="uk-button uk-button-primary">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="uk-card uk-card-default uk-margin-bottom">
+                    <div class="uk-card-media-top">
+                        <img src="/img/zapa_h/forum/1.jpg" alt="Producto 3">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Adidas Forum Low</h3>
+                        <p>Adidas Forum Low - black&green.</p>
+                        <p>Precio: $100.00</p>
+                        <a href="/productos/zapa_h/prod9.html" class="uk-button uk-button-primary">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+</body>
+<!-- Footer -->
+    <footer class="uk-section uk-section-secondary uk-padding">
+        <div class="uk-container">
+            <p class="uk-text-center">© 2024 Tienda de Zapatillas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.7/dist/js/uikit-icons.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/cart.js"></script>
+</html>

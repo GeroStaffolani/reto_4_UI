@@ -1,0 +1,193 @@
+body {
+  background-color: #83848a;
+  background-image: radial-gradient(at 85% 37%, rgb(7, 3, 2) 0px, transparent 30%),
+                    radial-gradient(at 44% 40%, rgb(58, 23, 90) 0px, transparent 30%),
+                    radial-gradient(at 57% 84%, hsla(120, 74%, 3%, 1) 0px, transparent 30%),
+                    radial-gradient(at 85% 47%, hsla(275, 100%, 2%, 0.7) 0px, transparent 30%),
+                    radial-gradient(at 19% 5%, rgb(31, 61, 105) 0px, transparent 30%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.uk-navbar-container {
+  background-color: white;
+}
+
+.uk-heading-line span {
+  background-color: transparent;
+  border: none;
+}
+
+.uk-section-primary {
+  background-color: transparent !important;
+}
+
+.uk-navbar-item img {
+  max-height: 100px;
+}
+
+.uk-button.login-button {
+  border-radius: 20px;
+  padding: 5px 30px;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.uk-button.login-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.uk-card {
+  border-radius: 10px;
+  padding: 0;
+}
+
+.uk-card-media-top {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.uk-card-media-top img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.uk-card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.uk-card-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.uk-card-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color:black;
+}
+
+.uk-width-1-2@s h2 {
+  margin-bottom: 5px;
+}
+
+.uk-width-1-2@s p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.uk-width-1-2@s .uk-margin-small {
+  margin-bottom: 10px;
+}
+
+.uk-width-1-2@s .uk-form-label {
+  margin-bottom: 5px;
+}
+
+.uk-width-1-2@s .uk-form-controls {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .uk-navbar-item img {
+    max-height: 80px;
+  }
+  
+  .login-button {
+    padding: 8px 16px;
+  }
+}
+
+.uk-section.uk-section-muted {
+  background-color: transparent !important;
+}
+
+.uk-section.uk-section-muted .uk-heading-medium {
+  color: white;
+}
+
+.uk-section.uk-section-muted .uk-lead {
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.8rem;
+  margin-top: auto;
+}
+
+.carousel-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-text-container {
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+}
+
+.carousel-text-container h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.carousel-text-container p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.carousel-text-container .uk-form-label {
+  color: white;
+}
+
+
+.text-section h3,p, li {
+  color: white;
+}
+
+.map-section h3{
+  color: white; 
+}
+
+
+.center-title {
+  text-align: center;
+  color: white;
+}
+
+.uk-form-label {
+  color: white;
+}
+

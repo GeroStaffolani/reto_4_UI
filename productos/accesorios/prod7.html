@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Zapatillas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.7/dist/css/uikit.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="/index.html">
+                <img src="/img/logo.png" alt="Logo de la Tienda" style="height: 100px;">
+            </a>
+            <ul class="uk-navbar-nav">
+                <li><a href="/index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Zapatillas</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="/zapa_hombre.html">Hombre</a></li>
+                            <li><a href="/zapa_mujer.html">Mujer</a></li>
+                            <li><a href="/zapa_niño.html">Niño</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="/accesorios.html">Accesorios</a></li>
+                <li><a href="/locales.html">Locales</a></li>
+                <li><a href="/talles.html">Talles</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#" uk-toggle="target: #cart-dropdown">
+                        <span uk-icon="icon: cart"></span> <span id="cart-count" class="uk-badge">0</span>
+                    </a>
+                    <div id="cart-dropdown" uk-dropdown="pos: bottom-right">
+                        <h6 class="uk-dropdown-header">Carrito de Compras</h6>
+                        <div id="cart-items"></div>
+                        <hr class="uk-divider-small">
+                        <span id="total-price" class="uk-text-bold">Total: $0.00</span>
+                        <hr class="uk-divider-small">
+                        <a class="uk-button uk-button-default uk-width-1-1" href="/cart.html">Ver carrito</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-button uk-button-primary login-button" href="/login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- carrusel-->
+    <main class="uk-container uk-margin-top">
+        <div class="uk-grid uk-grid-match" uk-grid>
+            <div class="uk-width-1-2@s">
+
+                <div class="carousel-image-container">
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true">
+                        <ul class="uk-slider-items uk-child-width-1-1">
+                            <li>
+                                <img src="/img/accesorios/7/1.jpg" alt="Imagen 1">
+                            </li>
+                            <li>
+                                <img src="/img/accesorios/7/2.jpg" alt="Imagen 2">
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
+                            <span uk-slider-arrow="true"></span>
+                        </a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next">
+                            <span uk-slider-arrow="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-2@s">
+
+                <div class="carousel-text-container">
+                    <h2 class="uk-margin-small-bottom">Morral Spurs</h2>
+                    <p class="uk-margin-remove-bottom">Morral Spurs - Lightgreen.</p>
+                    <p class="uk-margin-remove-top uk-margin-small-bottom">Precio: $40.00</p>
+
+                    <div class="uk-margin-small">
+                        <label for="size" class="uk-form-label">Seleccionar Talle:</label>
+                        <div class="uk-form-controls">
+                            <select id="size" class="uk-select">
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <a class="uk-button uk-button-primary" 
+                        href="#" 
+                        data-name="Morral Spurs" 
+                        data-price="40.00" 
+                        data-id="1" 
+                        data-image="/img/accesorios/7/1.jpg">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="uk-section uk-section-secondary uk-padding">
+        <div class="uk-container">
+            <p class="uk-text-center">© 2024 Tienda de Zapatillas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.7/dist/js/uikit-icons.min.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/cart.js"></script>
+</body>
+</html>

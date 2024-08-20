@@ -1,0 +1,50 @@
+
+.form-container {
+    max-width: 320px;
+    border-radius: 0.75rem;
+    background-color: #00000071;
+    padding: 2rem;
+    color: #f3f4f6;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.form {
+    margin-top: 1.5rem;
+}
+
+.input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.input-group label {
+    display: block;
+    color: #9ca3af;
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #374151;
+    outline: 0;
+}
+   
+.footer-custom {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  /* #111827 
